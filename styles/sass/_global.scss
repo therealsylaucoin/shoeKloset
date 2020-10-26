@@ -1,0 +1,58 @@
+// Colours!
+$purple: #4C0341;
+$mauve: #FAE5FF;
+$orange: #FE6F19;
+$white: #FFFFFF;
+$black: #0D0D0D;
+$brown: #882C07;
+
+//Fonts!
+$lato: 'Lato', sans-serif;
+$pompiere: 'Pompiere', cursive;
+
+//Strip Styles
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $lato;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+//Mixins
+@mixin fontSetup ($fontSize, $fontWeight, $lineHeight, $letterSpace) {
+    font-size: $font-size;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpace;
+}
+
+
+
+
+
