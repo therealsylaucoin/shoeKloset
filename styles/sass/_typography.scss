@@ -2,17 +2,6 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Pompiere', cursive;
 
-//Mixins
-@mixin fontSetup ($fontSize, $fontWeight, $lineHeight, $letterSpace, $fontColor) {
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    line-height: $lineHeight;
-    letter-spacing: $letterSpace;
-    color: $fontColor;
-}
-
-// Styles!
-
 html {
     font-size: 62.5%;
 }
@@ -26,7 +15,41 @@ h5,
     font-family: 'Pompiere', cursive;
 }
 
-.logo {
-    @include fontSetup(3.58rem, 400, 3.6rem, 1.1px, black);
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
 }
 
+.logo {
+    @include fontSetup(3.58rem, 400, 1.1px, 3.6rem, black);
+}
+
+h1 {
+    @include fontSetup(11rem, 400, normal, 6.4rem);
+}
+
+.pageTitle {
+    @include fontSetup(8rem, 400, normal, 9.2rem);
+}
+
+h2 {
+    @include fontSetup(5.2rem, 400, 1.2px);
+}
+
+h3 {
+    @include fontSetup(4.2rem, 400, 1.3px);
+}
+
+.sidebar__title {
+    @include fontSetup(3rem, 400, 1.3px);
+}
+
+h4 {
+    @include fontSetup(5.2rem, 400, 1.6px);
+}
+
+.button {
+    @include fontSetup (2rem, 400, 1px, 32px, white);
+}

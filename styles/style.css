@@ -255,7 +255,10 @@ a {
 
 .button {
   text-decoration: none;
-  color: #FFFFFF;
+  background-color: #4C0341;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 img {
@@ -271,10 +274,15 @@ img {
 }
 
 footer {
-  padding: 10px 0;
+  line-height: 3.2rem;
   text-align: center;
-  color: #FFFFFF;
+  font-size: 2rem;
+  color: white;
   background-color: #882C07;
+}
+
+footer a {
+  color: white;
 }
 
 html {
@@ -290,12 +298,75 @@ h5,
   font-family: 'Pompiere', cursive;
 }
 
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
 .logo {
   font-size: 3.58rem;
   font-weight: 400;
-  line-height: 3.6rem;
   letter-spacing: 1.1px;
+  line-height: 3.6rem;
   color: black;
+}
+
+h1 {
+  font-size: 11rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 6.4rem;
+  color: #4C0341;
+}
+
+.pageTitle {
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 9.2rem;
+  color: #4C0341;
+}
+
+h2 {
+  font-size: 5.2rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  color: #4C0341;
+}
+
+h3 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: normal;
+  color: #4C0341;
+}
+
+.sidebar__title {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: normal;
+  color: #4C0341;
+}
+
+h4 {
+  font-size: 5.2rem;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: normal;
+  color: #4C0341;
+}
+
+.button {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: white;
 }
 
 header.index {
@@ -341,8 +412,8 @@ header.contact {
 .menu__link {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2.9rem;
   letter-spacing: 1px;
+  line-height: 2.9rem;
   color: black;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -351,6 +422,21 @@ header.contact {
 .menu__link:hover {
   background-color: #4C0341;
   color: white;
+}
+
+h1 {
+  width: 25%;
+}
+
+.headerImg {
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.mauveBackground {
+  background-color: #FAE5FF;
 }
 
 .gallery {

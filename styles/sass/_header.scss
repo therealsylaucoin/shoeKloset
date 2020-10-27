@@ -28,7 +28,7 @@ header.contact {
     justify-content: flex-end;
 
     &__link {
-        @include fontSetup(2rem, 700, 2.9rem, 1px, black);
+        @include fontSetup(2rem, 700, 1px, 2.9rem, black);
         text-transform: uppercase;
         padding: 10px 20px;
     }
@@ -37,6 +37,16 @@ header.contact {
         background-color: $purple;
         color: white;
     }
+}
 
+h1 {
+    width: 25%;
+}
+
+.headerImg {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: 100px;
 }
 
