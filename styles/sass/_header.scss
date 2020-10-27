@@ -1,0 +1,42 @@
+header.index{
+    background-image: url(../assets/headerBackground.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+header.blog{
+    background-image: url(../assets/blogHeaderBackground.jpg);
+    background-size: cover;
+    height: 75vh;
+} 
+
+header.contact {
+    background-image: url(../assets/contactHeaderBackground.jpg);
+    background-size: cover;
+    height: 75vh;
+}
+
+.topFlex {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__link {
+        @include fontSetup(2rem, 700, 2.9rem, 1px, black);
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+
+    &__link:hover {
+        background-color: $purple;
+        color: white;
+    }
+
+}
+

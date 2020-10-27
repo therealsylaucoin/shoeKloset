@@ -234,3 +234,139 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #882C07;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo {
+  font-family: 'Pompiere', cursive;
+}
+
+.logo {
+  font-size: 3.58rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 1.1px;
+  color: black;
+}
+
+header.index {
+  background-image: url(../assets/headerBackground.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+header.blog {
+  background-image: url(../assets/blogHeaderBackground.jpg);
+  background-size: cover;
+  height: 75vh;
+}
+
+header.contact {
+  background-image: url(../assets/contactHeaderBackground.jpg);
+  background-size: cover;
+  height: 75vh;
+}
+
+.topFlex {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__link {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.menu__link:hover {
+  background-color: #4C0341;
+  color: white;
+}
+
+.gallery {
+  background-color: #FAE5FF;
+}
+
+.gallery__list {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery__item {
+  width: 30%;
+}

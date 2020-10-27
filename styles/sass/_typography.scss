@@ -1,0 +1,32 @@
+//Fonts!
+// font-family: 'Lato', sans-serif;
+// font-family: 'Pompiere', cursive;
+
+//Mixins
+@mixin fontSetup ($fontSize, $fontWeight, $lineHeight, $letterSpace, $fontColor) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpace;
+    color: $fontColor;
+}
+
+// Styles!
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo {
+    font-family: 'Pompiere', cursive;
+}
+
+.logo {
+    @include fontSetup(3.58rem, 400, 3.6rem, 1.1px, black);
+}
+
