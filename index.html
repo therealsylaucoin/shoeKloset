@@ -27,16 +27,16 @@
                     <ul class="menu">
 
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./index.html">Home</a>
+                            <a class="menu__link" href="./index.html">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="#">About</a>
+                            <a class="menu__link " href="#">About</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./blog.html">Blog</a>
+                            <a class="menu__link " href="./blog.html">Blog</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./contact.html">Contact</a>
+                            <a class="menu__link " href="./contact.html">Contact</a>
                         </li>
 
                     </ul>
@@ -47,40 +47,38 @@
 
             <h1>Find something new</h1>
 
+            <img class="headerImg" src="assets/headerImg.png"
+                alt="Side view of four shoes: two different sneakers and two different high heal sandals.">
         </div>
-
-        <img class="headerImg" src="assets/headerImg.png"
-            alt="Side view of four shoes: two different sneakers and two different high heal sandals.">
-
     </header>
 
     <main>
-
+        <!-- What is under the sea? SECTION ---------------------- -->
         <section class="mauveBackground">
 
-            <div class="wrapper">
+            <div class="wrapper flexSea">
 
-                <h2>What is under the sea?</h2>
+                <h2 class="flexSea__item">What is under the sea?</h2>
 
-                <p>Stiletto courts special occasion glossy embellished upper peep toe high heel twiste pretty lace
+                <p class="flexSea__item">Stiletto courts special occasion glossy embellished upper peep toe high heel
+                    twiste pretty lace
                     detailing sultry finish. Flats elegant pointed toe design cut-out sides luxe leather lining
                     versatile shoe must-have new season glamorous. Effortless comfortable full leather lining
                     eye-catching unique detail to the toe low 'cut-away' sides clean and sleek.</p>
 
-                <a class="button button--active" href="#">Find out more</a>
+                <a class="button button--active flexSea__item" href="#">Find out more</a>
 
             </div>
 
         </section>
 
-        <section class="whiteBackground">
+        <!-- 2 x 2 with IMAGES grid SECTION ------------------------------- -->
+        <section class="flexgrid wrapper">
 
-            <div class="wrapper topGrid">
+            <div class="flexgrid__main">
+                <div class="flexgrid__sub gridImgTop"></div>
 
-                <div class="topGrid__img"></div>
-
-                <div class=topGrid__content>
-
+                <div class="flexgrid__sub">
                     <h3>New Additions</h3>
 
                     <p>Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new
@@ -89,18 +87,15 @@
                         to
                         the toe low 'cut-away' sides clean and sleek.</p>
 
-                    <a class="button button--active">Read more</a>
-
+                    <a class="button button--active" href="#">Read more</a>
                 </div>
-
             </div>
 
-            <div class="wrapper bottomGrid">
+            <div class="flexgrid__main flexBottom">
 
-                <div class="bottomGrid__img"></div>
+                <div class="flexgrid__sub gridImgBottom"></div>
 
-                <div class="bottomGrid__content">
-
+                <div class="flexgrid__sub">
                     <h3>Too many options</h3>
 
                     <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop
@@ -113,71 +108,91 @@
                         ladylike
                         design.</p>
 
-                    <a class="button button--active">Read more</a>
-
+                    <a class="button button--active" href="#">Read more</a>
                 </div>
-
             </div>
 
         </section>
 
+        <!-- 2 x 2 with ICONS grid SECTION ------------------------------- -->
         <section class="mauveBackground">
 
-            <div class="topGrid">
+            <div class="wrapper">
 
-                <ul>
+                <ul class="flexicon">
 
-                    <li>
-                        <a href="#"><i class="fas fa-location-arrow"></i></a>
+                    <li class="flexicon__item">
 
-                        <h4>Locations</h4>
+                        <div class="flexicon__title">
 
-                        <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop
-                            sides
-                            unique silhouette. Lace up fastening bow detailing high stiletto heel leather lining
-                            beautiful lace
-                            upper elegant peep toe t-bar strap.</p>
+                            <a href="#"><i class="fas fa-location-arrow"></i></a>
+
+                            <div class="flexicon__content">
+
+                                <h4>Locations</h4>
+
+                                <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                                    heel drop
+                                    sides
+                                    unique silhouette. Lace up fastening bow detailing high  t-bar strap.</p>
+
+                            </div>
+
+                        </div>
+
                     </li>
 
-                    <li>
-                        <a href="#"><i class="fas fa-users"></i></a>
+                    <li class="flexicon__item">
 
-                        <h4>Community</h4>
+                        <div class="flexicon__title">
 
-                        <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop
-                            sides unique
-                            silhouette. Lace up fastening bow detailing high stiletto heel leather lining beautiful lace
-                            upper elegant peep
-                            toe t-bar strap.</p>
+                            <a href="#"><i class="fas fa-users"></i></a>
+
+                            <div class="flexicon__content">
+
+                                <h4>Community</h4>
+
+                                <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                                    heel
+                                    drop
+                                    sides unique
+                                    silhouette. Lace up fastening bow detailing high t-bar strap.</p>
+                            </div>
+                        </div>
+
                     </li>
 
-                </ul>
+                    <li class="flexicon__item">
 
-            </div>
+                        <div class="flexicon__title">
+                            <a href="./blog.html"><i class="fas fa-file"></i></a>
 
-            <div class="bottomGrid">
+                            <div class="flexicon__content">
+                                <h4>Blog</h4>
 
-                <ul>
+                                <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                                    heel
+                                    drop
+                                    sides unique silhouette. Lace up fastening bow detailing high t-bar strap.</p>
+                            </div>
+                        </div>
 
-                    <li>
-                        <a href="./blog.html"><i class="fas fa-file"></i></a>
-
-                        <h4>Blog</h4>
-
-                        <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop
-                            sides unique silhouette. Lace up fastening bow detailing high stiletto heel leather lining
-                            beautiful lace upper elegant peep toe t-bar strap.</p>
                     </li>
 
-                    <li>
-                        <a href="./contact.html"><i class="fas fa-phone"></i></a>
+                    <li class="flexicon__item">
 
-                        <h4>Get in touch</h4>
+                        <div class="flexicon__title"><a href="./contact.html"><i class="fas fa-phone"></i></a>
 
-                        <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop
-                            sides unique silhouette. Lace up fastening bow detailing high stiletto heel leather lining
-                            beautiful lace
-                            upper elegant peep toe t-bar strap.</p>
+                            <div class="flexicon__content">
+                                <h4>Get in touch</h4>
+
+                                <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                                    heel
+                                    drop
+                                    sides unique silhouette. Lace up fastening bow detailing high t-bar strap.</p>
+                            </div>
+                        </div>
+
                     </li>
 
                 </ul>
@@ -207,20 +222,20 @@
 
         </section>
 
-        <section class="gallery">
+        <section class="gallery mauveBackground">
 
             <ul class=" wrapper gallery__list">
 
                 <li class="gallery__item">
-                    <img class="gallery__img" src="./assets/gallery1.jpg" alt="">
+                    <img src="./assets/gallery1.jpg" alt="">
                 </li>
 
                 <li class="gallery__item">
-                    <img class="gallery__img" src="./assets/gallery2.jpg" alt="">
+                    <img src="./assets/gallery2.jpg" alt="">
                 </li>
 
                 <li class="gallery__item">
-                    <img class="gallery__img" src="./assets/gallery3.jpg" alt="">
+                    <img src="./assets/gallery3.jpg" alt="">
                 </li>
 
             </ul>

@@ -2,6 +2,7 @@ header.index{
     background-image: url(../assets/headerBackground.jpg);
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
 
 header.blog{
@@ -30,23 +31,24 @@ header.contact {
     &__link {
         @include fontSetup(2rem, 700, 1px, 2.9rem, black);
         text-transform: uppercase;
+        background-color: rgba(254, 111, 25, 0.5);
         padding: 10px 20px;
-    }
 
-    &__link:hover {
-        background-color: $purple;
-        color: white;
+        &:focus-within,
+        &:hover {
+            background-color: $purple;
+            color: white;
+        }
     }
 }
 
 h1 {
-    width: 25%;
+    width: 25%;     
 }
 
 .headerImg {
-    width: 50vw;
+    width: 47vw;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 15vh;
 }
-

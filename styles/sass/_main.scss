@@ -1,12 +1,103 @@
-.mauveBackground {
-    background-color: $mauve;
+.flexSea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw 0;
+
+    &__item {
+        text-align: center;
+        margin: 15px 0;
+    }
 }
 
+.flexgrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 50%;
+        padding: 50px 0;
+        // To size images while they move
+        min-height: 250px;
+        min-width: 400px;
+    }
+
+    &__sub * {
+        margin: 15px 0;
+    }
+}
+
+.flexBottom {
+    flex-direction: row-reverse;
+}
+
+.gridImgTop {
+    background-image: url(../assets/grid1.jpg);
+    background-size: cover;
+    position: relative;
+    left: calc((-100vw / 100) * 5);
+    top: -30px;
+    -webkit-box-shadow: 28px 28px 0px 0px $orange;
+    -moz-box-shadow:    28px 28px 0px 0px $orange;
+    box-shadow:         28px 28px 0px 0px $orange;
+}
+
+.gridImgBottom {
+    background-image: url(../assets/grid2.jpg);
+    background-size: cover;
+    position: relative;
+    right: calc((-100vw / 100) * 5);
+    -webkit-box-shadow: -31px 26px 0px 0px $orange;
+    -moz-box-shadow:    -31px 26px 0px 0px $orange;
+    box-shadow:         -31px 26px 0px 0px $orange;
+}
+
+.flexicon {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        display: block;
+        flex: 1 0 50%;
+        
+        i {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            background-color: $purple;
+            border-radius: 50%;
+            margin: 20px;
+        }
+    }
+
+    &__title {
+        display: flex;
+
+    }
+
+    &__content{
+        min-width: 260px;
+        padding: 20px 20px 20px 0;
+    }
+}
 
 .gallery {
-    background-color: $mauve;
-
     &__list {
         padding: 100px 0;
         display: flex;
