@@ -36,6 +36,7 @@ h1 {
 
 .pageTitle {
     @include fontSetup(8rem, 400, normal, 9.2rem);
+    text-transform: uppercase;
 }
 
 h2 {

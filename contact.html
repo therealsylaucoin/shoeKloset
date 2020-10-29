@@ -44,56 +44,66 @@
 
             </section>
 
-            <h1 class="pageTitle">Get In Touch</h1>
+            <h1 class="pageTitle titleContact">Get In Touch</h1>
         </div>
 
     </header>
 
+    <!-- Main SECTION starts here -->
+
     <main class="mauveBackground">
 
-        <div>
+        <div class="contactFlex wrapper">
 
-            <li>
-                <a href="#"><i aria-hidden="true" class="fab fa-facebook-f" title="Facebook"></i></a>
-                <span class="srOnly">Facebook</span>
-            </li>
-            <li>
-                <a href="#"><i aria-hidden="true" class="fab fa-instagram" title="Instagram"></i></a>
-                <span class="srOnly">Instagram</span>
-            </li>
-            <li>
-                <a href="#"><i aria-hidden="true" class="fab fa-twitter" title="Twitter"></i></a>
-                <span class="srOnly">Twitter</span>
-            </li>
-            <li>
-                <a href="#"><i aria-hidden="true" class="fab fa-whatsapp" title="Whatsapp"></i></a>
-                <span class="srOnly">Whatsapp</span>
-            </li>
+            <div class="contactInfo">
 
-            <address>
-                <a href="mailto:info@email.com">info@email.com</a> | <a href="tel:123-456-7890">123-456-7890</a><br>
-                123 Queen Street West, Toronto, ON<br>
-                M5V 2D5, Canada
-            </address>
+                <ul>
+                    <li>
+                        <a href="#"><i aria-hidden="true" class="fab fa-facebook-f" title="Facebook"></i></a>
+                        <span class="srOnly">Facebook</span>
+                    </li>
+                    <li>
+                        <a href="#"><i aria-hidden="true" class="fab fa-instagram" title="Instagram"></i></a>
+                        <span class="srOnly">Instagram</span>
+                    </li>
+                    <li>
+                        <a href="#"><i aria-hidden="true" class="fab fa-twitter" title="Twitter"></i></a>
+                        <span class="srOnly">Twitter</span>
+                    </li>
+                    <li>
+                        <a href="#"><i aria-hidden="true" class="fab fa-whatsapp" title="Whatsapp"></i></a>
+                        <span class="srOnly">Whatsapp</span>
+                    </li>
+                </ul>
 
+                <address>
+                    <a href="mailto:info@email.com">info@email.com</a><br>
+                    <a href="tel:123-456-7890">123-456-7890</a><br>
+                    123 Queen Street West, Unit 10<br>
+                    Toronto, ON<br>
+                    M5V 2D5, Canada
+                </address>
+
+
+            </div>
+
+            <form action="#" method="post" class="contactForm wrapper" name="contactForm">
+                <div class=contactForm__label>
+                    <label for="name" class="srOnly">Name</label>
+                    <input name="name" id="name" type="text" placeholder="Name">
+
+                    <label for="email" class="srOnly">Email</label>
+                    <input name="email" id="email" type="email" placeholder="Email address"></div>
+
+                <label for="message" class="srOnly">Message</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                <button type="submit" class="contactbutton">Submit</button>
+
+            </form>
 
         </div>
 
-        <form action="#" method="post" class="contactForm" name="contactForm">
-
-            <label for="name" class="srOnly">Name</label>
-            <input name="name" id="name" type="text" placeholder="Name">
-
-            <label for="email" class="srOnly">Email</label>
-            <input name="email" id="email" type="email" placeholder="Email address">
-
-            <label for="message" class="srOnly">Message</label>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-
-            <button type="submit" class="button">Submit</button>
-
-        </form>
-        
     </main>
 
     <footer>

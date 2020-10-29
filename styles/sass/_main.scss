@@ -1,3 +1,4 @@
+// What is under the sea? SECTION -----------------
 .flexSea {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     }
 }
 
+//New additions - 2 x 2 with IMAGES grid SECTION ----------------
 .flexgrid {
     display: flex;
     flex-direction: column;
@@ -25,16 +27,43 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex: 1 0 50%;
-        padding: 50px 0;
+        padding: 50px 100px;
         // To size images while they move
         min-height: 250px;
         min-width: 400px;
     }
 
+    &__sub.bottom {
+        align-items: flex-end;
+        p {
+            text-align: right;
+        }
+    }
+
     &__sub * {
         margin: 15px 0;
+    }
+
+    &__img {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    &__img.top {
+        background-image: url(../assets/grid1.jpg);
+        left: -8%;
+        top: -30px;
+        box-shadow: 30px 30px 0px 0px $orange;
+    }
+
+    &__img.bottom {
+        background-image: url(../assets/grid2.jpg);
+        right: -8%;
+        bottom: -30px;
+        box-shadow: -30px 30px 0px 0px $orange;
     }
 }
 
@@ -42,41 +71,19 @@
     flex-direction: row-reverse;
 }
 
-.gridImgTop {
-    background-image: url(../assets/grid1.jpg);
-    background-size: cover;
-    position: relative;
-    left: calc((-100vw / 100) * 5);
-    top: -30px;
-    -webkit-box-shadow: 28px 28px 0px 0px $orange;
-    -moz-box-shadow:    28px 28px 0px 0px $orange;
-    box-shadow:         28px 28px 0px 0px $orange;
-}
-
-.gridImgBottom {
-    background-image: url(../assets/grid2.jpg);
-    background-size: cover;
-    position: relative;
-    right: calc((-100vw / 100) * 5);
-    -webkit-box-shadow: -31px 26px 0px 0px $orange;
-    -moz-box-shadow:    -31px 26px 0px 0px $orange;
-    box-shadow:         -31px 26px 0px 0px $orange;
-}
-
+// Locations, community, etc. 2 x 2 with ICONS grid SECTION ----------------
 .flexicon {
-    padding: 100px;
+    padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     &__item {
-        display: block;
         flex: 1 0 50%;
         
         i {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
+            width: 4.5rem;
+            height: 4.5rem;
             text-align: center;
             padding: 10px;
             color: white;
@@ -97,6 +104,42 @@
     }
 }
 
+//Popular this month SECTION -----------------------
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        width: 25%;
+        min-width: 200px;
+        padding-right: 30px;
+
+        img {
+            box-shadow: 28px 28px 0px 0px $orange;
+        }
+    }
+
+    &__content {
+        width: 75%;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__content * {
+        padding-bottom: 20px;
+    }
+
+    &__content a {
+        margin-top: 20px;
+    }
+}
+
+// Gallery SECTION ---------------------
 .gallery {
     &__list {
         padding: 100px 0;

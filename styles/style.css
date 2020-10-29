@@ -243,6 +243,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
+  overflow-x: hidden;
 }
 
 ul {
@@ -262,12 +263,12 @@ i {
 .button {
   text-decoration: none;
   color: white;
-  background-color: #4C0341;
+  background-color: #882C07;
   padding: 10px 20px;
   text-align: center;
   text-transform: uppercase;
   width: 220px;
-  border: 2px solid #4C0341;
+  border: 2px solid #882C07;
 }
 
 .button:hover,
@@ -285,7 +286,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -359,6 +360,7 @@ h1 {
   letter-spacing: normal;
   line-height: 9.2rem;
   color: #4C0341;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -404,6 +406,7 @@ h4 {
 header.index {
   background-image: url(../assets/headerBackground.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   position: relative;
 }
@@ -411,13 +414,15 @@ header.index {
 header.blog {
   background-image: url(../assets/blogHeaderBackground.jpg);
   background-size: cover;
-  height: 75vh;
+  background-position: center;
+  height: 60vh;
 }
 
 header.contact {
   background-image: url(../assets/contactHeaderBackground.jpg);
   background-size: cover;
-  height: 75vh;
+  background-position: center;
+  height: 50vh;
 }
 
 .topFlex {
@@ -449,7 +454,6 @@ header.contact {
   line-height: 2.9rem;
   color: black;
   text-transform: uppercase;
-  background-color: rgba(254, 111, 25, 0.5);
   padding: 10px 20px;
 }
 
@@ -522,19 +526,51 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  padding: 50px 0;
+  padding: 50px 100px;
   min-height: 250px;
   min-width: 400px;
 }
 
+.flexgrid__sub.bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flexgrid__sub.bottom p {
+  text-align: right;
+}
+
 .flexgrid__sub * {
   margin: 15px 0;
+}
+
+.flexgrid__img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.flexgrid__img.top {
+  background-image: url(../assets/grid1.jpg);
+  left: -8%;
+  top: -30px;
+  -webkit-box-shadow: 30px 30px 0px 0px #FE6F19;
+          box-shadow: 30px 30px 0px 0px #FE6F19;
+}
+
+.flexgrid__img.bottom {
+  background-image: url(../assets/grid2.jpg);
+  right: -8%;
+  bottom: -30px;
+  -webkit-box-shadow: -30px 30px 0px 0px #FE6F19;
+          box-shadow: -30px 30px 0px 0px #FE6F19;
 }
 
 .flexBottom {
@@ -544,27 +580,8 @@ h1 {
           flex-direction: row-reverse;
 }
 
-.gridImgTop {
-  background-image: url(../assets/grid1.jpg);
-  background-size: cover;
-  position: relative;
-  left: calc((-100vw / 100) * 5);
-  top: -30px;
-  -webkit-box-shadow: 28px 28px 0px 0px #FE6F19;
-  box-shadow: 28px 28px 0px 0px #FE6F19;
-}
-
-.gridImgBottom {
-  background-image: url(../assets/grid2.jpg);
-  background-size: cover;
-  position: relative;
-  right: calc((-100vw / 100) * 5);
-  -webkit-box-shadow: -31px 26px 0px 0px #FE6F19;
-  box-shadow: -31px 26px 0px 0px #FE6F19;
-}
-
 .flexicon {
-  padding: 100px;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,16 +593,14 @@ h1 {
 }
 
 .flexicon__item {
-  display: block;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
 }
 
 .flexicon__item i {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 4.5rem;
+  height: 4.5rem;
   text-align: center;
   padding: 10px;
   color: white;
@@ -605,6 +620,55 @@ h1 {
   padding: 20px 20px 20px 0;
 }
 
+.popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 75px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popular__img {
+  width: 25%;
+  min-width: 200px;
+  padding-right: 30px;
+}
+
+.popular__img img {
+  -webkit-box-shadow: 28px 28px 0px 0px #FE6F19;
+          box-shadow: 28px 28px 0px 0px #FE6F19;
+}
+
+.popular__content {
+  width: 75%;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popular__content * {
+  padding-bottom: 20px;
+}
+
+.popular__content a {
+  margin-top: 20px;
+}
+
 .gallery__list {
   padding: 100px 0;
   display: -webkit-box;
@@ -617,4 +681,291 @@ h1 {
 
 .gallery__item {
   width: 30%;
+}
+
+.titleBlog {
+  text-align: right;
+  width: 50%;
+}
+
+.flexBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexBlog__left {
+  width: 33%;
+  margin-top: 100px;
+  margin-right: 30px;
+}
+
+.flexBlog__left ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #0D0D0D;
+}
+
+.flexBlog__left ul a {
+  color: #0D0D0D;
+}
+
+.flexBlog__left .sidebar {
+  background-color: #FFFFFF;
+  padding: 0 50px 30px 30px;
+  padding-top: 110%;
+  position: relative;
+}
+
+.flexBlog__left .sidebar h3:nth-of-type(2) {
+  margin-top: 40px;
+}
+
+.flexBlog__left .sidebar img {
+  width: 125%;
+  position: absolute;
+  right: 5%;
+  top: -2%;
+}
+
+.flexBlog__left h3,
+.flexBlog__left p {
+  padding: 10px 0;
+}
+
+.flexBlog__right {
+  width: 66%;
+  margin-left: 30px;
+}
+
+.flexBlog__right .blogPost {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 70% 200px 100px 100px;
+}
+
+.flexBlog__right .blogPost img {
+  position: absolute;
+  width: 60vw;
+  left: 40px;
+  top: -250px;
+  -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
+          box-shadow: -40px 35px 0px 0px #FE6F19;
+}
+
+.blogComments {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px 3fr;
+      grid-template-columns: 120px 3fr;
+  -ms-grid-rows: 80px 2fr 2fr;
+      grid-template-rows: 80px 2fr 2fr;
+  gap: 30px;
+}
+
+.blogComments__title {
+  grid-column: span 2;
+}
+
+.blogComments__img {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.blogComments__date {
+  font-weight: bold;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px 200px;
+      grid-template-rows: 50px 200px;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding-left: 10px;
+  border: none;
+  background-color: #FAE5FF;
+  border-bottom: 2px solid #FE6F19;
+}
+
+form textarea {
+  background-color: #FAE5FF;
+  border: 2px solid #FE6F19;
+}
+
+form textarea,
+form button {
+  grid-column: span 2;
+  padding: 10px;
+}
+
+form .blogButton {
+  text-decoration: none;
+  color: white;
+  background-color: #4C0341;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #4C0341;
+}
+
+form ::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+form :-ms-input-placeholder {
+  opacity: 1;
+}
+
+form ::-ms-input-placeholder {
+  opacity: 1;
+}
+
+form ::placeholder {
+  opacity: 1;
+}
+
+.titleContact {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactFlex .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactFlex .contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactFlex .contactInfo ul li {
+  padding: 10px;
+}
+
+.contactFlex .contactInfo ul i {
+  font-size: 2.5rem;
+}
+
+.contactFlex .contactInfo address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+  padding-top: 30px;
+}
+
+.contactFlex .contactInfo address a[href="mailto:info@email.com"] {
+  color: #4C0341;
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.contactFlex .contactInfo address a[href="tel:123-456-7890"] {
+  color: black;
+}
+
+.contactFlex .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  padding: 80px;
+  -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
+          box-shadow: -40px 35px 0px 0px #FE6F19;
+}
+
+.contactFlex .contactForm__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contactFlex .contactForm__label input {
+  width: 48%;
+  padding: 10px;
+}
+
+.contactFlex .contactForm input[type="text"],
+.contactFlex .contactForm input[type="email"],
+.contactFlex .contactForm textarea {
+  background-color: white;
+}
+
+.contactFlex .contactForm textarea,
+.contactFlex .contactForm button {
+  display: inline;
+  width: 100%;
+}
+
+.contactFlex .contactForm textarea {
+  height: 300px;
+}
+
+.contactFlex .contactForm button {
+  text-decoration: none;
+  color: white;
+  background-color: #882C07;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #882C07;
+}
+
+.contactFlex ::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contactFlex :-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contactFlex ::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contactFlex ::placeholder {
+  opacity: 1;
 }

@@ -1,6 +1,7 @@
 header.index{
     background-image: url(../assets/headerBackground.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
     position: relative;
 }
@@ -8,13 +9,15 @@ header.index{
 header.blog{
     background-image: url(../assets/blogHeaderBackground.jpg);
     background-size: cover;
-    height: 75vh;
+    background-position: center;
+    height: 60vh;
 } 
 
 header.contact {
     background-image: url(../assets/contactHeaderBackground.jpg);
     background-size: cover;
-    height: 75vh;
+    background-position: center;
+    height: 50vh;
 }
 
 .topFlex {
@@ -31,7 +34,7 @@ header.contact {
     &__link {
         @include fontSetup(2rem, 700, 1px, 2.9rem, black);
         text-transform: uppercase;
-        background-color: rgba(254, 111, 25, 0.5);
+        // background-color: rgba(254, 111, 25, 0.5);
         padding: 10px 20px;
 
         &:focus-within,
