@@ -29,7 +29,7 @@
                             <a class="menu__link menu__link--active" href="./index.html">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="#">About</a>
+                            <a class="menu__link menu__link--active" href="./index.html">About</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link menu__link--active" href="./blog.html">Blog</a>
@@ -52,9 +52,9 @@
     <!-- SIDEBAR SECTION --------------------------- -->
     <main class="mauveBackground">
 
-        <div class="wrapper flexBlog">
+        <div class="flexBlog">
 
-            <div class="flexBlog__left">
+            <section class="flexBlog__left">
 
                 <aside class="sidebar">
 
@@ -86,18 +86,18 @@
 
                 </aside>
 
-            </div>
+            </section>
 
             <!-- BLOG RIGHT SECTION ------------------------------- -->
-            <div class="flexBlog__right">
+            <section class="flexBlog__right">
 
-                <div class="blogPost">
+                <article class="blogPost">
 
                     <img src="./assets/blogPost.jpg" alt="">
 
                     <h2>Shoes around the world</h2>
 
-                    <p class=blogInfo>Monday May 4th, 2019 by Dieula</p>
+                    <p class="blogInfo">Monday May 4th, 2019 by Dieula</p>
 
                     <p>Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new
                         season glamorous. Lace up fastening bow detailing high stiletto heel leather lining beautiful
@@ -130,7 +130,7 @@
                         toe
                         contrasting cap.</p>
 
-                </div>
+                    </article>
 
                 <div class="blogComments">
 
@@ -165,19 +165,19 @@
                 <form action="#" method="post" class="blogForm" name="blogForm">
 
                     <label for="name" class="srOnly">Name</label>
-                    <input name="name" id="name" type="text" placeholder="Name">
+                    <input name="name" id="name" type="text" placeholder="Name" required>
 
                     <label for="email" class="srOnly">Email Address</label>
-                    <input name="email" id="email" type="email" placeholder="Email address">
+                    <input name="email" id="email" type="email" placeholder="Email address" required>
 
                     <label for="comment" class="srOnly">Comment</label>
-                    <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+                    <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
 
                     <button type="submit" class="blogButton">Post comment</button>
 
                 </form>
 
-            </div>
+            </section>
 
         </div>
 
@@ -185,7 +185,7 @@
     </main>
 
     <footer>
-        Created @ <a href="https://www.junocollege.com" target="_blank">Juno College</a> by Syl in 2020
+        <p>Created @ <a href="https://www.junocollege.com" target="_blank">Juno College</a> by Syl in 2020</p>
     </footer>
 
 </body>

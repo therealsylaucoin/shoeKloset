@@ -530,10 +530,10 @@ h1 {
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   padding: 50px 100px;
-  min-height: 250px;
+  min-height: 350px;
   min-width: 400px;
 }
 
@@ -559,7 +559,7 @@ h1 {
 
 .flexgrid__img.top {
   background-image: url(../assets/grid1.jpg);
-  left: -8%;
+  left: -10%;
   top: -30px;
   -webkit-box-shadow: 30px 30px 0px 0px #FE6F19;
           box-shadow: 30px 30px 0px 0px #FE6F19;
@@ -567,8 +567,7 @@ h1 {
 
 .flexgrid__img.bottom {
   background-image: url(../assets/grid2.jpg);
-  right: -8%;
-  bottom: -30px;
+  right: -10%;
   -webkit-box-shadow: -30px 30px 0px 0px #FE6F19;
           box-shadow: -30px 30px 0px 0px #FE6F19;
 }
@@ -598,26 +597,31 @@ h1 {
           flex: 1 0 50%;
 }
 
-.flexicon__item i {
-  width: 4.5rem;
-  height: 4.5rem;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  background-color: #4C0341;
-  border-radius: 50%;
-  margin: 20px;
-}
-
 .flexicon__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.flexicon__title i {
+  width: 10%;
+  height: 4rem;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: #4C0341;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+
 .flexicon__content {
   min-width: 260px;
-  padding: 20px 20px 20px 0;
+  padding: 20px;
+}
+
+.flexicon__content a:hover {
+  -webkit-transform: scale(1.1) translateX(25px);
+          transform: scale(1.1) translateX(25px);
 }
 
 .popular {
@@ -684,8 +688,8 @@ h1 {
 }
 
 .titleBlog {
-  text-align: right;
-  width: 50%;
+  position: absolute;
+  left: 40%;
 }
 
 .flexBlog {
@@ -695,9 +699,11 @@ h1 {
 }
 
 .flexBlog__left {
-  width: 33%;
-  margin-top: 100px;
-  margin-right: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50px;
+          flex: 1 0 50px;
+  margin: 100px 30px 0 8%;
+  max-width: 500px;
 }
 
 .flexBlog__left ul {
@@ -708,6 +714,11 @@ h1 {
 
 .flexBlog__left ul a {
   color: #0D0D0D;
+  border-bottom: 2px solid white;
+}
+
+.flexBlog__left ul a:hover, .flexBlog__left ul a:focus {
+  border-bottom: 2px solid #FAE5FF;
 }
 
 .flexBlog__left .sidebar {
@@ -734,8 +745,19 @@ h1 {
 }
 
 .flexBlog__right {
-  width: 66%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 300px;
+          flex: 2 0 300px;
   margin-left: 30px;
+  max-width: 1200px;
+}
+
+.flexBlog__right p {
+  margin-bottom: 30px;
+}
+
+.flexBlog__right p.blogInfo {
+  font-style: bold;
 }
 
 .flexBlog__right .blogPost {
@@ -748,12 +770,12 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding: 70% 200px 100px 100px;
+  padding: 50% 10% 100px 75px;
 }
 
 .flexBlog__right .blogPost img {
   position: absolute;
-  width: 60vw;
+  width: calc(100% - 40px);
   left: 40px;
   top: -250px;
   -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
@@ -769,6 +791,7 @@ h1 {
   -ms-grid-rows: 80px 2fr 2fr;
       grid-template-rows: 80px 2fr 2fr;
   gap: 30px;
+  margin-right: 10%;
 }
 
 .blogComments__title {
@@ -784,7 +807,7 @@ h1 {
   font-weight: bold;
 }
 
-form {
+.blogForm {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -793,28 +816,41 @@ form {
       grid-template-rows: 50px 200px;
   gap: 50px;
   padding: 100px 0;
+  margin-right: 10%;
 }
 
-form input[type="text"],
-form input[type="email"] {
+.blogForm input[type="text"],
+.blogForm input[type="email"] {
   padding-left: 10px;
   border: none;
   background-color: #FAE5FF;
   border-bottom: 2px solid #FE6F19;
 }
 
-form textarea {
+.blogForm input[type="text"]:hover, .blogForm input[type="text"]:focus,
+.blogForm input[type="email"]:hover,
+.blogForm input[type="email"]:focus {
+  border: 2px solid #FE6F19;
+  background-color: white;
+}
+
+.blogForm textarea {
   background-color: #FAE5FF;
   border: 2px solid #FE6F19;
 }
 
-form textarea,
-form button {
+.blogForm textarea:focus, .blogForm textarea:hover {
+  border: 2px solid #FE6F19;
+  background-color: white;
+}
+
+.blogForm textarea,
+.blogForm button {
   grid-column: span 2;
   padding: 10px;
 }
 
-form .blogButton {
+.blogForm .blogButton {
   text-decoration: none;
   color: white;
   background-color: #4C0341;
@@ -823,19 +859,24 @@ form .blogButton {
   border: 2px solid #4C0341;
 }
 
-form ::-webkit-input-placeholder {
+.blogForm .blogButton:focus, .blogForm .blogButton:hover {
+  border: 2px solid #FE6F19;
+  background-color: #882C07;
+}
+
+.blogForm ::-webkit-input-placeholder {
   opacity: 1;
 }
 
-form :-ms-input-placeholder {
+.blogForm :-ms-input-placeholder {
   opacity: 1;
 }
 
-form ::-ms-input-placeholder {
+.blogForm ::-ms-input-placeholder {
   opacity: 1;
 }
 
-form ::placeholder {
+.blogForm ::placeholder {
   opacity: 1;
 }
 
@@ -848,6 +889,7 @@ form ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .contactFlex .contactInfo {
@@ -862,6 +904,7 @@ form ::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: calc(50vh - 20px);
 }
 
 .contactFlex .contactInfo ul {
@@ -876,6 +919,11 @@ form ::placeholder {
 
 .contactFlex .contactInfo ul i {
   font-size: 2.5rem;
+}
+
+.contactFlex .contactInfo ul i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contactFlex .contactInfo address {
@@ -909,9 +957,12 @@ form ::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: white;
-  padding: 80px;
+  padding: 50px;
   -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
           box-shadow: -40px 35px 0px 0px #FE6F19;
+  position: absolute;
+  top: -55%;
+  left: 35%;
 }
 
 .contactFlex .contactForm__label {
@@ -933,6 +984,20 @@ form ::placeholder {
 .contactFlex .contactForm input[type="email"],
 .contactFlex .contactForm textarea {
   background-color: white;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.contactFlex .contactForm input[type="text"],
+.contactFlex .contactForm input[type="email"] {
+  border-bottom: 2px solid #FE6F19;
+}
+
+.contactFlex .contactForm input[type="text"]:hover, .contactFlex .contactForm input[type="text"]:focus,
+.contactFlex .contactForm input[type="email"]:hover,
+.contactFlex .contactForm input[type="email"]:focus {
+  border: 2px solid #FE6F19;
+  background-color: rgba(250, 229, 255, 0.5);
 }
 
 .contactFlex .contactForm textarea,
@@ -942,7 +1007,14 @@ form ::placeholder {
 }
 
 .contactFlex .contactForm textarea {
-  height: 300px;
+  height: 250px;
+  border: 2px solid #FE6F19;
+  padding: 10px;
+}
+
+.contactFlex .contactForm textarea:hover, .contactFlex .contactForm textarea:focus {
+  border: 2px solid #FE6F19;
+  background-color: rgba(250, 229, 255, 0.5);
 }
 
 .contactFlex .contactForm button {
@@ -952,6 +1024,12 @@ form ::placeholder {
   text-align: center;
   text-transform: uppercase;
   border: 2px solid #882C07;
+  padding: 10px;
+}
+
+.contactFlex .contactForm button:focus, .contactFlex .contactForm button:hover {
+  border: 2px solid #FE6F19;
+  background-color: #4C0341;
 }
 
 .contactFlex ::-webkit-input-placeholder {
@@ -968,4 +1046,22 @@ form ::placeholder {
 
 .contactFlex ::placeholder {
   opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  .index nav {
+    background-color: #FAE5FF;
+  }
+  .index h1 {
+    text-shadow: 2px 2px 0px #FAE5FF;
+  }
+}
+
+@media (max-width: 905px) {
+  .flexgrid__sub {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
