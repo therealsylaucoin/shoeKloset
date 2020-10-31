@@ -20,6 +20,21 @@ header.contact {
     height: 50vh;
 }
 
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    color: black;
+    background-color: white; 
+} 
+
+.skipLink:focus {
+    left: 10px;
+    color: $purple;
+    background-color: $mauve;
+}
+
 .topFlex {
     padding-top: 30px;
     display: flex;
@@ -27,23 +42,32 @@ header.contact {
     align-items: flex-start;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end;
+// nav styles
+nav {
 
-    &__link {
-        @include fontSetup(2rem, 700, 1px, 2.9rem, black);
-        text-transform: uppercase;
-        padding: 10px 20px;
+    input[type=checkbox],
+    i.fa-bars {
+        display: none;
+    }
 
-        &:focus-within,
-        &:hover {
-            background-color: $purple;
-            color: white;
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+
+        &__link {
+            @include fontSetup(2rem, 700, 1px, 2.9rem, black);
+            text-transform: uppercase;
+            padding: 10px 20px;
+
+            &:focus-within,
+            &:hover {
+                background-color: $purple;
+                color: white;
+            }
         }
     }
 }
-
 
 // Main page header styles
 .headerFlexContainer {

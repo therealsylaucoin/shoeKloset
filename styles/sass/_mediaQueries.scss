@@ -37,17 +37,86 @@
 
 // Tablet
 @media (max-width: 760px) {
+//nav menu styles
+.index,
+.blog,
+.contact {
+
+    .topFlex {
+        justify-content: flex-start;
+        padding-top: 15px;
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                background-color: transparent;
+
+            input[type=checkbox],
+            i.fa-bars {
+                display: inline-block;
+            }
+
+            .menu {
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: $brown;
+                height: 100vh;
+                width: 30vw;
+                position: fixed;
+                left: 0;
+                top: 0;
+                left: -100vh;
+                transition: all 0.5s ease;
+                z-index: 10;
+
+                a {
+                    color: $white;
+                    border-bottom: 2px solid $white;
+                }
+            }
+
+            input[type="checkbox"]:checked + .menu {
+                left: 0;
+            }
+
+            label[for="toggle"] {
+                font-size: 3rem;
+                position: fixed;
+                cursor: pointer;
+                top: 15px;
+                right: 15px;
+                z-index: 10;
+            }
+
+            input[type="checkbox"] {
+                visibility: hidden;
+            }
+        } 
+    }
+}
 
 // Contact Page media queries
     header.contact {
-        height: 25vh;
+        height: 95px;
     }
 
     .contactFlex {
-        bottom: 53px;
+        position: static;
         align-items: center;
 
         .contactFormFlex {
+            position: static;
+            align-items: center;
+            margin-bottom: 20px;
+
+                h1 {
+                    width: auto;
+                    margin: 0;
+                    font-size: 5rem;
+                    text-shadow: none;
+                }
 
                 .contactForm {
                 flex-direction: column;
@@ -84,45 +153,18 @@
 
 
 
-@media (max-width: 905px) {
+// @media (max-width: 905px) {
 
-        .flexgrid__sub {
-            justify-content: center;
-            text-align: center;
-        }
+//         .flexgrid__sub {
+//             justify-content: center;
+//             text-align: center;
+//         }
 
-}
+// }
 
 
 // Phone
-@media (max-width: 600px) {
-
-// Contact Page media queries
-    header.contact {
-        height: 15vh;
-        background-image: none;
-        background-color: $orange;
-    }
-
-    .titleContact {
-        font-size: 4rem;
-    }
-
-    .contactFlex {
-    position: static;
-
-        .contactFormFlex {
-            position: static;
-            margin-bottom: 20px;
-
-                h1 {
-                    width: 100%;
-                    text-shadow: none;
-                }
-        }
-
-    }
-}
+@media (max-width: 600px) {}
 
 
 

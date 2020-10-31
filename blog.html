@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
+
     <header class="blog">
 
         <div class="wrapper">
@@ -22,6 +24,11 @@
                 </div>
 
                 <nav>
+
+                    <label for="toggle">
+                        <i class="fa fa-bars" title="menu"></i>
+                    </label>
+                    <input type="checkbox" id="toggle" name="toggle" />
 
                     <ul class="menu">
 
@@ -44,7 +51,7 @@
 
             </section>
 
-            <h1 class="pageTitle titleBlog">Blog</h1>
+            <!-- <h1 class="pageTitle titleBlog">Blog</h1> -->
         </div>
 
     </header>
@@ -57,9 +64,13 @@
             <!-- BLOG RIGHT SECTION ------------------------------- -->
             <section class="flexBlog__right">
 
-                <article class="blogPost">
+                <article class="blogPost" id="mainContent">
 
-                    <img src="./assets/blogPost.jpg" alt="">
+                    <div class="blogPost__img">
+                        <h1 class="pageTitle titleBlog">Blog</h1>
+                    
+                        <img src="./assets/blogPost.jpg" alt="">
+                    </div>
 
                     <div class = "blogPost__text">
                         

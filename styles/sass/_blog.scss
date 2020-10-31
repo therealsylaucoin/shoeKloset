@@ -70,15 +70,24 @@
             flex: 1 0 40%;
             flex-direction: column;
 
-            img {
+            &__img {
                 position: relative;
-                box-shadow: -40px 40px 0px 0px $orange;
                 width: calc(100% - 40px);
                 left: 40px;
-                top: -100px;
+                top: -140px;
+                
+                h1 {
+                    margin: 0;
+                }
+
+                img {   
+                    box-shadow: -40px 40px 0px 0px $orange;
+                }
             }
 
             &__text {
+                position: relative;
+                top: -50px;
                 padding-left: 50px;
                 padding-right: 10%;
             }
