@@ -9,7 +9,6 @@
     &__item {
         text-align: center;
         margin: 15px 0;
-        
     }
 }
 
@@ -33,11 +32,12 @@
         padding: 50px 100px;
         // To size images while they move
         min-height: 350px;
-        min-width: 400px;
+        min-width: 390px;
     }
 
     &__sub.bottom {
         align-items: flex-end;
+        h3,
         p {
             text-align: right;
         }
@@ -87,15 +87,15 @@
     &__title {
         display: flex;
 
-        i {
-            width: 10%;
-            height: 4rem;
-            text-align: center;
+        .fa-stack { 
+            font-size: 2.5rem; 
+            margin-top: 10px;
             padding: 10px;
-            color: white;
-            background-color: $purple;
-            border-radius: 50%;
-            margin-top: 25px;
+            flex: 1 0 auto;
+        }
+        
+        i { 
+            vertical-align: middle; 
         }
     }
 
