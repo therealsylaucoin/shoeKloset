@@ -52,7 +52,7 @@
 
     &__right {
         flex: 2 0 auto;
-        margin-left: 90px;
+        margin-left: 50px;
         max-width: 60%;
         transform: translateY(-200px);
 
@@ -67,7 +67,6 @@
         .blogPost {
             background-color: $white;
             display: flex;
-            flex: 1 0 40%;
             flex-direction: column;
 
             &__img {

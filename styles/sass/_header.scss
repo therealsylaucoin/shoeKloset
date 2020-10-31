@@ -10,7 +10,7 @@ header.blog{
     background-image: url(../assets/blogHeaderBackground.jpg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 65vh;
 } 
 
 header.contact {
@@ -54,6 +54,7 @@ nav {
     .menu {
         display: flex;
         justify-content: flex-end;
+        align-items: flex-start;
 
         &__link {
             @include fontSetup(2rem, 700, 1px, 2.9rem, black);
