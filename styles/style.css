@@ -1566,6 +1566,11 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 @media (max-width: 500px) {
+  .index .topFlex nav .menu,
+  .blog .topFlex nav .menu,
+  .contact .topFlex nav .menu {
+    width: 50vw;
+  }
   header.index .headerFlexContainer h1 {
     font-size: 6rem;
   }

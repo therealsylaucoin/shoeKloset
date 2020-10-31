@@ -456,6 +456,11 @@
 
 // Phone
 @media (max-width: 500px) {
+    .index .topFlex nav .menu,
+    .blog .topFlex nav .menu,
+    .contact .topFlex nav .menu {
+        width: 50vw;
+    }
 //Home page
     header.index {
         .headerFlexContainer {
@@ -468,15 +473,6 @@
     .flexgrid__sub {
         min-width: 300px;
     }
-
-//New addition section
-    
-        // max-width: 300px;
-
-
-
-
-
 }
 
 
