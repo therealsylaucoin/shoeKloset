@@ -1145,7 +1145,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   opacity: 1;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .index nav li {
     background-color: #FAE5FF;
   }
