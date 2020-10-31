@@ -287,7 +287,13 @@ img {
 
 .wrapper {
   max-width: 1400px;
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pageWrapper {
+  max-width: 1980px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -462,15 +468,33 @@ header.contact {
   color: white;
 }
 
-h1 {
-  width: 25%;
+.headerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 75px;
 }
 
-.headerImg {
-  width: 47vw;
+.headerFlexContainer h1 {
+  width: 25%;
+  margin-left: 10%;
+}
+
+.headerFlexContainer .headerImg {
+  width: 50%;
+}
+
+.blog .titleBlog {
   position: absolute;
-  right: 0;
-  top: 15vh;
+  left: 40%;
+}
+
+.titleContact {
+  width: 400px;
+  margin: 0 0 0 40px;
 }
 
 .flexSea {
@@ -487,7 +511,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10vw 0;
+  padding: 250px 0;
 }
 
 .flexSea__item {
@@ -687,15 +711,16 @@ h1 {
   width: 30%;
 }
 
-.titleBlog {
-  position: absolute;
-  left: 40%;
-}
-
 .flexBlog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flexBlog__left {
@@ -724,11 +749,11 @@ h1 {
 .flexBlog__left .sidebar {
   background-color: #FFFFFF;
   padding: 0 50px 30px 30px;
-  padding-top: 110%;
+  padding-top: 105%;
   position: relative;
 }
 
-.flexBlog__left .sidebar h3:nth-of-type(2) {
+.flexBlog__left .sidebar h3 {
   margin-top: 40px;
 }
 
@@ -736,7 +761,7 @@ h1 {
   width: 125%;
   position: absolute;
   right: 5%;
-  top: -2%;
+  top: -20px;
 }
 
 .flexBlog__left h3,
@@ -746,10 +771,12 @@ h1 {
 
 .flexBlog__right {
   -webkit-box-flex: 2;
-      -ms-flex: 2 0 300px;
-          flex: 2 0 300px;
-  margin-left: 30px;
-  max-width: 1200px;
+      -ms-flex: 2 0 auto;
+          flex: 2 0 auto;
+  margin-left: 90px;
+  max-width: 60%;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 .flexBlog__right p {
@@ -757,7 +784,7 @@ h1 {
 }
 
 .flexBlog__right p.blogInfo {
-  font-style: bold;
+  font-weight: 700;
 }
 
 .flexBlog__right .blogPost {
@@ -765,21 +792,27 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  padding: 50% 10% 100px 75px;
 }
 
 .flexBlog__right .blogPost img {
-  position: absolute;
+  position: relative;
+  -webkit-box-shadow: -40px 40px 0px 0px #FE6F19;
+          box-shadow: -40px 40px 0px 0px #FE6F19;
   width: calc(100% - 40px);
   left: 40px;
-  top: -250px;
-  -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
-          box-shadow: -40px 35px 0px 0px #FE6F19;
+  top: -100px;
+}
+
+.flexBlog__right .blogPost__text {
+  padding-left: 50px;
+  padding-right: 10%;
 }
 
 .blogComments {
@@ -804,7 +837,7 @@ h1 {
 }
 
 .blogComments__date {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .blogForm {
@@ -880,31 +913,55 @@ h1 {
   opacity: 1;
 }
 
-.titleContact {
-  margin: 0 auto;
-  width: 400px;
-}
-
 .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
+  bottom: 200px;
+}
+
+.contactFlex .contactFormFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 40px;
+}
+
+.contactFlex .contactFormFlex h1 {
+  width: 100%;
 }
 
 .contactFlex .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: calc(50vh - 20px);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10px;
 }
 
 .contactFlex .contactInfo ul {
@@ -930,6 +987,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -953,26 +1012,30 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   background-color: white;
   padding: 50px;
-  -webkit-box-shadow: -40px 35px 0px 0px #FE6F19;
-          box-shadow: -40px 35px 0px 0px #FE6F19;
-  position: absolute;
-  top: -55%;
-  left: 35%;
+  -webkit-box-shadow: -40px 40px 0px 0px #FE6F19;
+          box-shadow: -40px 40px 0px 0px #FE6F19;
+  margin-left: 40px;
 }
 
 .contactFlex .contactForm__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
 .contactFlex .contactForm__label input {
@@ -996,7 +1059,6 @@ h1 {
 .contactFlex .contactForm input[type="text"]:hover, .contactFlex .contactForm input[type="text"]:focus,
 .contactFlex .contactForm input[type="email"]:hover,
 .contactFlex .contactForm input[type="email"]:focus {
-  border: 2px solid #FE6F19;
   background-color: rgba(250, 229, 255, 0.5);
 }
 
@@ -1013,7 +1075,6 @@ h1 {
 }
 
 .contactFlex .contactForm textarea:hover, .contactFlex .contactForm textarea:focus {
-  border: 2px solid #FE6F19;
   background-color: rgba(250, 229, 255, 0.5);
 }
 
@@ -1057,11 +1118,99 @@ h1 {
   }
 }
 
+@media (max-width: 1250px) {
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contactFlex h1 {
+    text-shadow: 2px 2px 0px #FAE5FF;
+  }
+  .contactFlex .contactInfo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  header.contact {
+    height: 25vh;
+  }
+  .contactFlex {
+    bottom: 53px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlex .contactFormFlex .contactForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
+  .contactFlex .contactFormFlex .contactForm input {
+    width: 100%;
+  }
+  .contactFlex .contactInfo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contactFlex .contactInfo ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFlex .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: 0px;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 905px) {
   .flexgrid__sub {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header.contact {
+    height: 15vh;
+    background-image: none;
+    background-color: #FE6F19;
+  }
+  .titleContact {
+    font-size: 4rem;
+  }
+  .contactFlex {
+    position: static;
+  }
+  .contactFlex .contactFormFlex {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .contactFlex .contactFormFlex h1 {
+    width: 100%;
+    text-shadow: none;
   }
 }

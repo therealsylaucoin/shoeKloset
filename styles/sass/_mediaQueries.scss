@@ -1,16 +1,10 @@
-// Breakpoints
-$desktop: 1400px;
-$laptop: 1024px;
-$tablet: 768px;
-$phone: 640px;
-
-
-@media (max-width: $desktop) {
-
+// To mitigate some accessibility issues
+@media (max-width: 1400px) {
+// Main page
     .index {
 
         nav {
-        background-color: $mauve;
+            background-color: $mauve;
         } 
 
         h1 {
@@ -19,10 +13,76 @@ $phone: 640px;
     }  
 }
 
+// Desktop
+@media (max-width: 1250px) {
 
-@media (max-width: $laptop) {
 
+// Contact Page media queries
+    .contactFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+            text-shadow: 2px 2px 0px $mauve;
+        }
+
+        .contactInfo {
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
+    }
 }
+
+
+// Tablet
+@media (max-width: 760px) {
+
+// Contact Page media queries
+    header.contact {
+        height: 25vh;
+    }
+
+    .contactFlex {
+        bottom: 53px;
+        align-items: center;
+
+        .contactFormFlex {
+
+                .contactForm {
+                flex-direction: column;
+                margin-right: 0;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+        .contactInfo {
+            justify-content: center;
+            margin-right: 0px;
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 20px;
+
+
+            ul {
+                justify-content: center;
+            }
+        }
+
+        .contactForm {
+            box-shadow: none;
+            margin-right: 0px;
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+
 
 @media (max-width: 905px) {
 
@@ -32,3 +92,41 @@ $phone: 640px;
         }
 
 }
+
+
+// Phone
+@media (max-width: 600px) {
+
+// Contact Page media queries
+    header.contact {
+        height: 15vh;
+        background-image: none;
+        background-color: $orange;
+    }
+
+    .titleContact {
+        font-size: 4rem;
+    }
+
+    .contactFlex {
+    position: static;
+
+        .contactFormFlex {
+            position: static;
+            margin-bottom: 20px;
+
+                h1 {
+                    width: 100%;
+                    text-shadow: none;
+                }
+        }
+
+    }
+}
+
+
+
+
+
+
+

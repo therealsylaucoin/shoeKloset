@@ -14,38 +14,38 @@
 <body>
     <header class="contact">
 
-        <div class="wrapper">
-            <section class="topFlex">
+        <!-- <div class="wrapper"> -->
+        <section class="topFlex wrapper">
 
-                <div class="logo">
-                    Shoe<br>Kloset
-                </div>
+            <div class="logo">
+                Shoe<br>Kloset
+            </div>
 
-                <nav>
+            <nav>
 
-                    <ul class="menu">
+                <ul class="menu">
 
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./index.html">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./index.html">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./contact.html">Contact</a>
-                        </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="./index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="./index.html">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="./contact.html">Contact</a>
+                    </li>
 
-                    </ul>
+                </ul>
 
-                </nav>
+            </nav>
 
-            </section>
+        </section>
 
-            <h1 class="pageTitle titleContact">Get In Touch</h1>
-        </div>
+        <!-- <h1 class="pageTitle titleContact">Get In Touch</h1> -->
+        <!-- </div> -->
 
     </header>
 
@@ -55,7 +55,29 @@
 
         <div class="contactFlex wrapper">
 
-            <div class="contactInfo">
+            <section class="contactFormFlex">
+
+                <h1 class="pageTitle titleContact">Get In Touch</h1>
+
+                <form action="#" method="post" class="contactForm" name="contactForm">
+                    <div class=contactForm__label>
+                        <label for="name" class="srOnly">Name</label>
+                        <input name="name" id="name" type="text" placeholder="Name" required>
+
+                        <label for="email" class="srOnly">Email</label>
+                        <input name="email" id="email" type="email" placeholder="Email address" required></div>
+
+                    <label for="message" class="srOnly">Message</label>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+
+                    <button type="submit" class="contactbutton">Submit</button>
+
+                </form>
+
+            </section>
+
+
+            <section class="contactInfo">
 
                 <ul>
                     <li>
@@ -85,22 +107,7 @@
                 </address>
 
 
-            </div>
-
-            <form action="#" method="post" class="contactForm wrapper" name="contactForm">
-                <div class=contactForm__label>
-                    <label for="name" class="srOnly">Name</label>
-                    <input name="name" id="name" type="text" placeholder="Name" required>
-
-                    <label for="email" class="srOnly">Email</label>
-                    <input name="email" id="email" type="email" placeholder="Email address" required></div>
-
-                <label for="message" class="srOnly">Message</label>
-                <textarea name="message" id="message" placeholder="Message" required></textarea>
-
-                <button type="submit" class="contactbutton">Submit</button>
-
-            </form>
+            </section>
 
         </div>
 

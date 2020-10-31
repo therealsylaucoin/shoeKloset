@@ -34,7 +34,6 @@ header.contact {
     &__link {
         @include fontSetup(2rem, 700, 1px, 2.9rem, black);
         text-transform: uppercase;
-        // background-color: rgba(254, 111, 25, 0.5);
         padding: 10px 20px;
 
         &:focus-within,
@@ -45,14 +44,42 @@ header.contact {
     }
 }
 
-h1 {
-    width: 25%;     
+
+// Main page header styles
+.headerFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+
+    h1 {
+        width: 25%; 
+        margin-left: 10%;    
+    }
+
+    .headerImg {
+        width: 50%;
+    }
 }
 
-.headerImg {
-    width: 47vw;
-    position: absolute;
-    right: 0;
-    top: 15vh;
+
+
+
+// blog header styles
+.blog {
+
+    .titleBlog {
+        position: absolute;
+        left: 40%;  
+    }
 }
+
+// Contact page header styles
+.titleContact {
+    width: 400px;
+    margin: 0 0 0 40px;
+}
+
+
+
+
 
