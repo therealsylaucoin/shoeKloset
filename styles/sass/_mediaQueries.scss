@@ -34,7 +34,7 @@
     }
 
 // Contact Page media queries **********
-    .contactFlex {
+    .contactUs {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -408,11 +408,11 @@
         background-position: left;
     }
 
-    .contactFlex {
+    .contactUs {
         position: static;
         align-items: center;
 
-        .contactFormFlex {
+        &__container {
             position: static;
             align-items: center;
             margin-bottom: 20px;
@@ -424,7 +424,7 @@
                 text-shadow: none;
             }
 
-            .contactForm {
+            &__form {
             flex-direction: column;
             margin-right: 0;
 
@@ -447,7 +447,7 @@
             }
         }
 
-        .contactForm {
+        &__form {
             box-shadow: none;
             margin-right: 0px;
             margin-left: 0;
@@ -455,7 +455,7 @@
     }
 }
 
-// Phone
+// Phone 
 @media (max-width: 500px) {
     .index .topFlex nav .menu,
     .blog .topFlex nav .menu,

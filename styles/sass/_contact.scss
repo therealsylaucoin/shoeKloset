@@ -2,14 +2,14 @@
     text-shadow: 1px 1px 0 $mauve;
 }
 
-.contactFlex {
+.contactUs {
     display: flex; 
     flex-direction: row-reverse;
     align-items: flex-end;
     position: relative;
     bottom: 200px;
 
-    .contactFormFlex {
+    &__container {
         display: flex;
         flex: 1 1 auto;
         flex-direction: column;
@@ -21,53 +21,8 @@
         }
     }
 
-    .contactInfo {
-        display: flex;
-        flex: 1 0 auto;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-right: 10px;
-
-        ul {
-            display: flex;
-
-            li { 
-                padding: 10px;
-            }
-
-            i {
-                font-size: 2.5rem;
-
-                &:hover{
-                    transform: scale(1.2);
-                }
-            }
-            
-        }
-
-        address {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            font-style: normal;
-            padding-top: 30px;
-            
-            a[href="mailto:info@email.com"] {
-                color: $purple;
-                font-family: 'Pompiere', cursive;
-                text-transform: uppercase;
-                font-size: 30px;
-            }
-
-            a[href="tel:123-456-7890"] {
-                color: black;
-            }
-
-        }
-    }
-
-    // Contact form styles 
-    .contactForm {
+    &__form {
+        
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 auto;
@@ -146,10 +101,50 @@
 }
 
 
+    .contactInfo {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 10px;
 
+        ul {
+            display: flex;
 
+            li { 
+                padding: 10px;
+            }
 
+            i {
+                font-size: 2.5rem;
 
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            
+        }
+
+        address {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-style: normal;
+            padding-top: 30px;
+            
+            a[href="mailto:info@email.com"] {
+                color: $purple;
+                font-family: 'Pompiere', cursive;
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+
+            a[href="tel:123-456-7890"] {
+                color: black;
+            }
+
+        }
+    }
 
 
 

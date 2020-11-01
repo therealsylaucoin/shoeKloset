@@ -960,7 +960,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   text-shadow: 1px 1px 0 #FAE5FF;
 }
 
-.contactFlex {
+.contactUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,7 +975,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   bottom: 200px;
 }
 
-.contactFlex .contactFormFlex {
+.contactUs__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,11 +990,112 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   bottom: 40px;
 }
 
-.contactFlex .contactFormFlex h1 {
+.contactUs__container h1 {
   width: 100%;
 }
 
-.contactFlex .contactInfo {
+.contactUs__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  background-color: white;
+  padding: 50px;
+  -webkit-box-shadow: -40px 40px 0px 0px #FE6F19;
+          box-shadow: -40px 40px 0px 0px #FE6F19;
+  margin-left: 40px;
+}
+
+.contactUs__form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactUs__form__label input {
+  width: 48%;
+  padding: 10px;
+}
+
+.contactUs__form input[type="text"],
+.contactUs__form input[type="email"],
+.contactUs__form textarea {
+  background-color: white;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.contactUs__form input[type="text"],
+.contactUs__form input[type="email"] {
+  border-bottom: 2px solid #FE6F19;
+}
+
+.contactUs__form input[type="text"]:hover, .contactUs__form input[type="text"]:focus,
+.contactUs__form input[type="email"]:hover,
+.contactUs__form input[type="email"]:focus {
+  background-color: rgba(250, 229, 255, 0.5);
+}
+
+.contactUs__form textarea,
+.contactUs__form button {
+  display: inline;
+  width: 100%;
+}
+
+.contactUs__form textarea {
+  height: 250px;
+  border: 2px solid #FE6F19;
+  padding: 10px;
+}
+
+.contactUs__form textarea:hover, .contactUs__form textarea:focus {
+  background-color: rgba(250, 229, 255, 0.5);
+}
+
+.contactUs__form button {
+  text-decoration: none;
+  color: white;
+  background-color: #882C07;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #882C07;
+  padding: 10px;
+}
+
+.contactUs__form button:focus, .contactUs__form button:hover {
+  border: 2px solid #FE6F19;
+  background-color: #4C0341;
+}
+
+.contactUs ::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contactUs :-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contactUs ::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contactUs ::placeholder {
+  opacity: 1;
+}
+
+.contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,26 +1112,26 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   margin-right: 10px;
 }
 
-.contactFlex .contactInfo ul {
+.contactInfo ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contactFlex .contactInfo ul li {
+.contactInfo ul li {
   padding: 10px;
 }
 
-.contactFlex .contactInfo ul i {
+.contactInfo ul i {
   font-size: 2.5rem;
 }
 
-.contactFlex .contactInfo ul i:hover {
+.contactInfo ul i:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.contactFlex .contactInfo address {
+.contactInfo address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,116 +1145,15 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   padding-top: 30px;
 }
 
-.contactFlex .contactInfo address a[href="mailto:info@email.com"] {
+.contactInfo address a[href="mailto:info@email.com"] {
   color: #4C0341;
   font-family: 'Pompiere', cursive;
   text-transform: uppercase;
   font-size: 30px;
 }
 
-.contactFlex .contactInfo address a[href="tel:123-456-7890"] {
+.contactInfo address a[href="tel:123-456-7890"] {
   color: black;
-}
-
-.contactFlex .contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  background-color: white;
-  padding: 50px;
-  -webkit-box-shadow: -40px 40px 0px 0px #FE6F19;
-          box-shadow: -40px 40px 0px 0px #FE6F19;
-  margin-left: 40px;
-}
-
-.contactFlex .contactForm__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contactFlex .contactForm__label input {
-  width: 48%;
-  padding: 10px;
-}
-
-.contactFlex .contactForm input[type="text"],
-.contactFlex .contactForm input[type="email"],
-.contactFlex .contactForm textarea {
-  background-color: white;
-  border: none;
-  margin-bottom: 40px;
-}
-
-.contactFlex .contactForm input[type="text"],
-.contactFlex .contactForm input[type="email"] {
-  border-bottom: 2px solid #FE6F19;
-}
-
-.contactFlex .contactForm input[type="text"]:hover, .contactFlex .contactForm input[type="text"]:focus,
-.contactFlex .contactForm input[type="email"]:hover,
-.contactFlex .contactForm input[type="email"]:focus {
-  background-color: rgba(250, 229, 255, 0.5);
-}
-
-.contactFlex .contactForm textarea,
-.contactFlex .contactForm button {
-  display: inline;
-  width: 100%;
-}
-
-.contactFlex .contactForm textarea {
-  height: 250px;
-  border: 2px solid #FE6F19;
-  padding: 10px;
-}
-
-.contactFlex .contactForm textarea:hover, .contactFlex .contactForm textarea:focus {
-  background-color: rgba(250, 229, 255, 0.5);
-}
-
-.contactFlex .contactForm button {
-  text-decoration: none;
-  color: white;
-  background-color: #882C07;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid #882C07;
-  padding: 10px;
-}
-
-.contactFlex .contactForm button:focus, .contactFlex .contactForm button:hover {
-  border: 2px solid #FE6F19;
-  background-color: #4C0341;
-}
-
-.contactFlex ::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.contactFlex :-ms-input-placeholder {
-  opacity: 1;
-}
-
-.contactFlex ::-ms-input-placeholder {
-  opacity: 1;
-}
-
-.contactFlex ::placeholder {
-  opacity: 1;
 }
 
 @media (max-width: 1550px) {
@@ -1177,7 +1177,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   .flexBlog__left .sidebar p, .flexBlog__left .sidebar li {
     font-size: 1.8rem;
   }
-  .contactFlex {
+  .contactUs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1189,10 +1189,10 @@ nav .menu__link:focus-within, nav .menu__link:hover {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .contactFlex h1 {
+  .contactUs h1 {
     text-shadow: 2px 2px 0px #FAE5FF;
   }
-  .contactFlex .contactInfo {
+  .contactUs .contactInfo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1526,36 +1526,36 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     height: 250px;
     background-position: left;
   }
-  .contactFlex {
+  .contactUs {
     position: static;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .contactFlex .contactFormFlex {
+  .contactUs__container {
     position: static;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px;
   }
-  .contactFlex .contactFormFlex h1 {
+  .contactUs__container h1 {
     width: auto;
     margin: 0;
     font-size: 5rem;
     text-shadow: none;
   }
-  .contactFlex .contactFormFlex .contactForm {
+  .contactUs__container__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 0;
   }
-  .contactFlex .contactFormFlex .contactForm input {
+  .contactUs__container__form input {
     width: 100%;
   }
-  .contactFlex .contactInfo {
+  .contactUs .contactInfo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1564,12 +1564,12 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     text-align: center;
     margin-bottom: 20px;
   }
-  .contactFlex .contactInfo ul {
+  .contactUs .contactInfo ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactFlex .contactForm {
+  .contactUs__form {
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-right: 0px;
