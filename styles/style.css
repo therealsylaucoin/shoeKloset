@@ -287,7 +287,7 @@ img {
 
 .wrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1273,7 +1273,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     width: 40%;
   }
   header.blog {
-    height: 25vh;
+    height: 500px;
   }
 }
 
@@ -1294,7 +1294,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     text-align: center;
     background-color: rgba(250, 229, 255, 0.7);
     font-size: 8rem;
-    margin-top: 75px;
+    margin-top: 60px;
   }
   header.blog {
     height: 250px;
@@ -1437,9 +1437,11 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   }
   .contactFlex .contactFormFlex h1 {
     margin: 0;
-    text-align: center;
+    text-align: left;
     font-size: 5rem;
-    text-shadow: none;
+    position: absolute;
+    right: -10%;
+    top: 130px;
   }
   .contactFlex .contactFormFlex .contactForm {
     -webkit-box-orient: vertical;
@@ -1447,6 +1449,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 0;
+    padding: 15px;
   }
   .contactFlex .contactFormFlex .contactForm input {
     width: 100%;
@@ -1498,8 +1501,8 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     max-width: 80%;
   }
   .flexBlog__right {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
     margin-bottom: 50px;
   }
   .flexBlog__right h2 {
@@ -1516,7 +1519,11 @@ nav .menu__link:focus-within, nav .menu__link:hover {
             box-shadow: none;
   }
   .flexBlog__right .blogPost__img h1 {
-    font-size: 6rem;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: -90px;
+    text-shadow: 2px 2px 0px #FAE5FF;
   }
   .flexBlog__right .blogPost__text {
     position: static;
@@ -1560,8 +1567,13 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 @media (max-width: 760px) {
+  .flexBlog__right {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .flexBlog__right .blogPost__img h1 {
     font-size: 5rem;
+    top: -120px;
   }
   .flexBlog__right .blogPost__img img {
     display: none;

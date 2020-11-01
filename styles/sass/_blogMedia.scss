@@ -31,7 +31,7 @@
         }
 
         &__right {
-            transform: translateY(0);
+            transform: translateY(-150px);
             margin-bottom: 50px;
             
             h2 {
@@ -51,7 +51,11 @@
                     }
 
                     h1 {
-                        font-size: 6rem;
+                        width: 100%;
+                        text-align: left;
+                        position: absolute;
+                        top: -90px;
+                        text-shadow: 2px 2px 0px $mauve;
                     }
                 }
 
@@ -109,14 +113,18 @@
     .flexBlog {
 
         &__right {
+            transform: translateY(0);
 
-            .blogPost__img {
-                h1 {
-                    font-size: 5rem;
-                }
-
-                img {
-                    display: none;
+            .blogPost {
+                &__img {
+                    h1 {
+                        font-size: 5rem;
+                        top: -120px;
+                    }
+    
+                    img {
+                        display: none;
+                    }
                 }
             }
         }

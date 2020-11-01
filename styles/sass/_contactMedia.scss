@@ -30,14 +30,17 @@
 
             h1 {
                 margin: 0;
-                text-align: center;
+                text-align: left;
                 font-size: 5rem;
-                text-shadow: none;
+                position: absolute;
+                right: -10%;
+                top: 130px;
             }
 
             .contactForm {
             flex-direction: column;
             margin-right: 0;
+            padding: 15px;
 
                 input {
                     width: 100%;
