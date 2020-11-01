@@ -739,6 +739,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 
 .gallery__item {
   width: 30%;
+  max-width: 395px;
 }
 
 .flexBlog {
@@ -1383,6 +1384,9 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .gallery__item {
     padding: 20px 0;
