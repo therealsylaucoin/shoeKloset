@@ -694,7 +694,10 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 .popular__img {
-  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  max-width: 500px;
   min-width: 200px;
   padding-right: 30px;
 }
@@ -1236,8 +1239,8 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     font-size: 3rem;
     position: fixed;
     cursor: pointer;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     z-index: 10;
   }
   .index .topFlex input[type="checkbox"],
@@ -1252,6 +1255,9 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   .blog .topFlex nav .menu,
   .contact .topFlex nav .menu {
     width: 50vw;
+  }
+  .contact .topFlex nav label[for="toggle"] {
+    right: 40px;
   }
 }
 
@@ -1356,7 +1362,12 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     padding: 75px 0;
   }
   .popular__img {
-    display: none;
+    margin-bottom: 40px;
+    padding-right: 20px;
+  }
+  .popular__img img {
+    -webkit-box-shadow: 20px 20px 0px 0px #FE6F19;
+            box-shadow: 20px 20px 0px 0px #FE6F19;
   }
   .popular__content {
     width: 100%;

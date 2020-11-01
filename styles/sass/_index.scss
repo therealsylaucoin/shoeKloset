@@ -30,7 +30,6 @@
         align-items: flex-start;
         flex: 1 1 50%;
         padding: 50px 100px;
-        // To size images while they move
         min-height: 350px;
         min-width: 390px;
     }
@@ -72,7 +71,6 @@
     
 }
 
-
 // Locations, community, etc. 2 x 2 with ICONS grid SECTION ----------------
 .flexicon {
     padding: 100px 0;
@@ -109,8 +107,6 @@
     }
 }
 
-    
-
 //Popular this month SECTION -----------------------
 .popular {
     display: flex;
@@ -120,7 +116,8 @@
     justify-content: center;
 
     &__img {
-        width: 25%;
+        flex: 1 0 25%;
+        max-width: 500px;
         min-width: 200px;
         padding-right: 30px;
 
