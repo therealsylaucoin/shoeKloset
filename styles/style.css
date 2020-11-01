@@ -1571,6 +1571,9 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .flexBlog__right .blogPost__text {
+    padding: 10px;
+  }
   .flexBlog__right .blogPost__img h1 {
     font-size: 5rem;
     top: -120px;
@@ -1616,7 +1619,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     display: none;
   }
   .blogForm {
-    gap: 20px;
+    gap: 2rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 50px  50px 200px;
