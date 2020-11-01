@@ -459,6 +459,10 @@ header.contact {
           align-items: flex-start;
 }
 
+nav {
+  z-index: 10;
+}
+
 nav input[type=checkbox],
 nav i.fa-bars {
   display: none;
@@ -1588,13 +1592,16 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 @media (max-height: 750px) {
+  header.index {
+    height: 500px;
+  }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
   header.contact {
     height: 375px;
   }
   header.blog {
     height: 250px;
-  }
-  header.index {
-    height: 500px;
   }
 }

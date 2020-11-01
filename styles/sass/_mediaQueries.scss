@@ -475,11 +475,18 @@
 }
 
 
-
-
-
 //media queries for height! Mobile devices
 @media (max-height: 750px) {
+    header.index {
+        height: 500px;
+    }
+}
+
+@media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 4) 
+    and (orientation: landscape){
     header.contact {
         height: 375px;
     }
@@ -487,11 +494,4 @@
     header.blog {
         height: 250px;
     }
-
-    header.index {
-        height: 500px;
-    }
-
 }
-
-
