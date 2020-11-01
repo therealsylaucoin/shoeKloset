@@ -336,7 +336,7 @@
 
 //Blog Page media queries **********
     header.blog{
-        height: 95px;
+        height: 250px;
     }   
     
     .flexBlog {
@@ -404,7 +404,8 @@
 
 // Contact Page media queries **********
     header.contact {
-        height: 95px;
+        height: 250px;
+        background-position: left;
     }
 
     .contactFlex {
