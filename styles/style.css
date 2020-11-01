@@ -491,6 +491,10 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   color: white;
 }
 
+.flexSea {
+  position: relative;
+}
+
 .headerFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,7 +502,9 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 75px;
+  position: absolute;
+  top: 200px;
+  width: 100%;
 }
 
 .headerFlexContainer h1 {
@@ -1194,7 +1200,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   header.index {
     height: 65vh;
   }
-  header.index .headerFlexContainer .headerImg {
+  .headerFlexContainer .headerImg {
     width: 40%;
   }
   .flexSea {
@@ -1415,14 +1421,14 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   header.index {
     height: 250px;
   }
-  header.index .headerFlexContainer {
+  .headerFlexContainer {
     margin: 0;
-    padding-top: 50px;
+    top: 150px;
   }
-  header.index .headerFlexContainer .headerImg {
+  .headerFlexContainer .headerImg {
     display: none;
   }
-  header.index .headerFlexContainer h1 {
+  .headerFlexContainer h1 {
     width: 100%;
     margin: 0;
     text-align: center;
@@ -1573,7 +1579,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   .contact .topFlex nav .menu {
     width: 50vw;
   }
-  header.index .headerFlexContainer h1 {
+  .headerFlexContainer h1 {
     font-size: 6rem;
   }
   .flexgrid__sub {

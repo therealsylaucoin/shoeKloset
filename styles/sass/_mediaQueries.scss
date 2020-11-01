@@ -54,14 +54,14 @@
 //Index/main page media queries*********
     header.index {
         height: 65vh;
+    }
 
-        .headerFlexContainer {
+    .headerFlexContainer {
 
             .headerImg {
                 width: 40%;
             }
         }
-    }
 
 //Under the sea section
     .flexSea {
@@ -292,10 +292,11 @@
         // background: linear-gradient(to bottom, rgba(250, 229, 255, 0.5), rgba(136, 44, 7, 0.9)), url('../assets/headerBackground.jpg');
         // background-size: cover;
         // background-position: center;
-        
-        .headerFlexContainer {
+    }
+
+    .headerFlexContainer {
             margin: 0;
-            padding-top: 50px;
+            top: 150px;
 
             .headerImg {
                 display: none;
@@ -309,7 +310,6 @@
                 font-size: 8rem;
             }
         }
-    }
 
 //Under the sea section
     .flexSea {
@@ -463,13 +463,11 @@
         width: 50vw;
     }
 //Home page
-    header.index {
-        .headerFlexContainer {
+    .headerFlexContainer {
             h1 {
                 font-size: 6rem;
             }
         }
-    }
 
     .flexgrid__sub {
         min-width: 300px;
