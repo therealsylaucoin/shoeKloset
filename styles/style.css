@@ -513,7 +513,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 .headerFlexContainer .headerImg {
-  width: 50vw;
+  max-width: 50vw;
   max-height: 50vw;
 }
 
@@ -1376,7 +1376,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     position: fixed;
     left: 0;
     top: 0;
-    left: -100vh;
+    left: -300vh;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 10;
@@ -1584,5 +1584,17 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   }
   .flexgrid__sub {
     min-width: 300px;
+  }
+}
+
+@media (max-height: 750px) {
+  header.contact {
+    height: 375px;
+  }
+  header.blog {
+    height: 250px;
+  }
+  header.index {
+    height: 500px;
   }
 }

@@ -245,7 +245,7 @@
                     position: fixed;
                     left: 0;
                     top: 0;
-                    left: -100vh;
+                    left: -300vh;
                     transition: all 0.5s ease;
                     z-index: 10;
 
@@ -477,5 +477,21 @@
 
 
 
+
+//media queries for height! Mobile devices
+@media (max-height: 750px) {
+    header.contact {
+        height: 375px;
+    }
+
+    header.blog {
+        height: 250px;
+    }
+
+    header.index {
+        height: 500px;
+    }
+
+}
 
 
