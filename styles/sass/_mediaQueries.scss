@@ -308,10 +308,7 @@
 
 //Index/home page media queries ********
     header.index {
-        height: 250px;
-        // background: linear-gradient(to bottom, rgba(250, 229, 255, 0.5), rgba(136, 44, 7, 0.9)), url('../assets/headerBackground.jpg');
-        // background-size: cover;
-        // background-position: center;
+        height: 350px;
     }
 
     .headerFlexContainer {
@@ -328,6 +325,7 @@
                 text-align: center;
                 background-color: rgba(250, 229, 255, 0.7);
                 font-size: 8rem;
+                margin-top: 75px;
             }
         }
 

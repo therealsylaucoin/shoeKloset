@@ -495,10 +495,6 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   color: white;
 }
 
-.flexSea {
-  position: relative;
-}
-
 .headerFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,9 +502,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  top: 200px;
-  width: 100%;
+  margin-top: 8rem;
 }
 
 .headerFlexContainer h1 {
@@ -1438,7 +1432,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     visibility: hidden;
   }
   header.index {
-    height: 250px;
+    height: 350px;
   }
   .headerFlexContainer {
     margin: 0;
@@ -1453,6 +1447,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     text-align: center;
     background-color: rgba(250, 229, 255, 0.7);
     font-size: 8rem;
+    margin-top: 75px;
   }
   .flexSea {
     padding: 75px 0;
