@@ -1156,12 +1156,27 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   opacity: 1;
 }
 
+@media (min-width: 1025px) {
+  header.blog {
+    min-height: 415px;
+  }
+}
+
+@media (min-width: 760px) {
+  header.index,
+  header.contact {
+    min-height: 500px;
+  }
+}
+
 @media (max-width: 1550px) {
   .index nav li {
     background-color: #FAE5FF;
   }
-  .index h1,
   .index .logo {
+    text-shadow: 2px 2px 0px #FAE5FF;
+  }
+  .headerFlexContainer h1 {
     text-shadow: 2px 2px 0px #FAE5FF;
   }
 }
@@ -1177,7 +1192,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   .flexBlog__left .sidebar p, .flexBlog__left .sidebar li {
     font-size: 1.8rem;
   }
-  .contactUs {
+  .contactFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1189,10 +1204,10 @@ nav .menu__link:focus-within, nav .menu__link:hover {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .contactUs h1 {
+  .contactFlex h1 {
     text-shadow: 2px 2px 0px #FAE5FF;
   }
-  .contactUs .contactInfo {
+  .contactFlex .contactInfo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1526,36 +1541,36 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     height: 250px;
     background-position: left;
   }
-  .contactUs {
+  .contactFlex {
     position: static;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .contactUs__container {
+  .contactFlex .contactFormFlex {
     position: static;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px;
   }
-  .contactUs__container h1 {
+  .contactFlex .contactFormFlex h1 {
     width: auto;
     margin: 0;
     font-size: 5rem;
     text-shadow: none;
   }
-  .contactUs__container__form {
+  .contactFlex .contactFormFlex .contactForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 0;
   }
-  .contactUs__container__form input {
+  .contactFlex .contactFormFlex .contactForm input {
     width: 100%;
   }
-  .contactUs .contactInfo {
+  .contactFlex .contactInfo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1564,12 +1579,12 @@ nav .menu__link:focus-within, nav .menu__link:hover {
     text-align: center;
     margin-bottom: 20px;
   }
-  .contactUs .contactInfo ul {
+  .contactFlex .contactInfo ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contactUs__form {
+  .contactFlex .contactForm {
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-right: 0px;
@@ -1588,20 +1603,5 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   }
   .flexgrid__sub {
     min-width: 300px;
-  }
-}
-
-@media (max-height: 750px) {
-  header.index {
-    height: 500px;
-  }
-}
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
-  header.contact {
-    height: 375px;
-  }
-  header.blog {
-    height: 250px;
   }
 }
