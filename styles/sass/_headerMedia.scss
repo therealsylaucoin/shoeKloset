@@ -1,0 +1,78 @@
+// Min-height media query for header
+//Index/home page
+@media (min-width:760px) {
+    header.index,
+    header.contact {
+        min-height: 500px;
+    }
+
+    header.blog {
+        min-height: 415px;
+    }
+}
+
+//Small desktop
+//Index/home page
+@media (max-width: 1025px) {
+    header.index {
+        height: 65vh;
+    }
+
+    .headerFlexContainer {
+        .headerImg {
+            width: 40%;
+        }
+    }
+//Blog page
+    header.blog{
+        height: 25vh;
+    }
+}
+
+
+//Tablet
+@media (max-width: 760px) {
+//Index/Home page
+    header.index {
+        height: 350px;
+    }
+
+    .headerFlexContainer {
+        margin: 0;
+        top: 150px;
+
+        .headerImg {
+            display: none;
+        }
+
+        h1 {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            background-color: rgba(250, 229, 255, 0.7);
+            font-size: 8rem;
+            margin-top: 75px;
+        }
+    }
+//Blog page
+    header.blog{
+        height: 250px;
+    } 
+
+//Contage page
+    header.contact {
+        height: 250px;
+        background-position: left;
+    }
+
+
+}
+
+//Phone 
+@media (max-width: 500px) {
+    .headerFlexContainer {
+        h1 {
+            font-size: 6rem;
+        }
+    }
+}

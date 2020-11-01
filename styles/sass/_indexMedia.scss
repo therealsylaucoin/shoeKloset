@@ -1,0 +1,107 @@
+//Index/home page media queries
+
+// To mitigate some accessibility issues
+@media (max-width: 1550px) {
+    .index {
+        nav li {
+            background-color: $mauve;
+        } 
+
+        .logo {
+            text-shadow: 2px 2px 0px $mauve;
+        }
+    }  
+
+    .headerFlexContainer {
+        h1 {
+            text-shadow: 2px 2px 0px $mauve;
+        }
+    }
+}
+
+//Small desktop
+@media (max-width: 1025px) {
+//Under the sea section
+    .flexSea {
+        padding: 100px 0;
+    }
+//New Addiitons section
+    .flexgrid {
+        padding-top: 75px;
+
+        &__main {
+            flex-direction: column;
+        }
+
+        &__sub,
+        &__sub.bottom {
+            align-items: center;
+            h3, p{
+                text-align: center;
+            }
+
+            padding: 75px 0;
+        }
+
+        &__img {
+            position: static;
+
+            &.bottom,
+            &.top {
+                box-shadow: 20px 20px 0px 0px $orange;
+            }
+        }
+    }
+
+//Location, community etc section
+.flexicon {
+    padding: 75px 0;
+}
+
+//Popular this month section
+    .popular {
+        &__img {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}  
+
+// Tablet
+@media (max-width: 760px) {
+//Under the sea section
+    .flexSea {
+        padding: 75px 0;
+    }
+
+    h2.flexSea__item {
+        font-size: 4rem;
+    }
+
+//gallery section
+    .gallery {
+        &__list {
+            padding: 65px 0;
+            flex-direction: column;
+            justify-content: center;
+        }      
+
+        &__item {
+            padding: 20px 0;
+            width: 100%;
+        }
+    }
+}
+
+//Phone
+@media (max-width: 500px) {
+    .flexgrid__sub {
+        min-width: 300px;
+    }
+}
