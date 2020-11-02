@@ -510,8 +510,8 @@ nav .menu__link:focus-within, nav .menu__link:hover {
 }
 
 .headerFlexContainer .headerImg {
-  max-width: 50vw;
-  max-height: 50vw;
+  max-width: 950px;
+  max-height: 950px;
 }
 
 .blog .titleBlog {
