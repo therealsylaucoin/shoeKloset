@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -458,6 +449,10 @@ header.contact {
           align-items: flex-start;
 }
 
+.logo {
+  max-width: 100px;
+}
+
 nav {
   z-index: 10;
 }
@@ -662,6 +657,10 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+.flexicon__title .fa-stack-1x {
+  color: #FFFFFF;
 }
 
 .flexicon__title i {
@@ -952,6 +951,11 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   opacity: 1;
 }
 
+fieldset {
+  padding: 0;
+  border: none;
+}
+
 .contact .logo {
   text-shadow: 1px 1px 0 #FAE5FF;
 }
@@ -1021,7 +1025,7 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   font-size: 2.5rem;
 }
 
-.contactFlex .contactInfo ul i:hover {
+.contactFlex .contactInfo ul i:hover, .contactFlex .contactInfo ul i:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -1216,9 +1220,11 @@ nav .menu__link:focus-within, nav .menu__link:hover {
   .contact .topFlex nav .menu__link {
     color: #FFFFFF;
   }
-  .index .topFlex nav .menu__link:hover,
+  .index .topFlex nav .menu__link:hover, .index .topFlex nav .menu__link:focus,
   .blog .topFlex nav .menu__link:hover,
-  .contact .topFlex nav .menu__link:hover {
+  .blog .topFlex nav .menu__link:focus,
+  .contact .topFlex nav .menu__link:hover,
+  .contact .topFlex nav .menu__link:focus {
     background-color: #FAE5FF;
     color: #4C0341;
   }

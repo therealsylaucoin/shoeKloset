@@ -46,7 +46,8 @@
                     &__link {
                         color: $white;
 
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             background-color: $mauve;
                             color: $purple;
                         }
